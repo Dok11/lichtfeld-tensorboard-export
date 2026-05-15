@@ -1,5 +1,10 @@
 # TensorBoard Export for LichtFeld Studio
 
+![Python](https://img.shields.io/badge/python-3.12+-blue)
+![LichtFeld](https://img.shields.io/badge/LichtFeld-0.4.2+-blue)
+![Plugin API](https://img.shields.io/badge/plugin%20API-%3E%3D1%2C%3C2-blue)
+![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)
+
 TensorBoard Export is a LichtFeld Studio plugin that writes full training metrics from the training lifecycle hooks to TensorBoard-compatible event files and CSV.
 
 It exists because LichtFeld Studio's built-in loss plot is intentionally short-lived UI state. This plugin records the training signal at the source, so long runs can be inspected later in TensorBoard or external analysis tools.
