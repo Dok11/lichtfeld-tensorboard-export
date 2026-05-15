@@ -24,6 +24,14 @@ TensorBoard dashboard:
 
 ![TensorBoard dashboard with exported LichtFeld training metrics](docs/images/tensorboard-dashboard.png)
 
+## Requirements
+
+- LichtFeld Studio `>=0.4.2`
+- LichtFeld plugin API `>=1,<2`
+- Python `>=3.12`
+- `tensorboardX` is used by the plugin for event file writing.
+- TensorBoard itself must be installed and started separately.
+
 ## Installation
 
 Clone this repository into LichtFeld's plugin directory with the plugin directory name `tensorboard_export`:
@@ -170,7 +178,6 @@ config.json
 - TensorBoard must be started separately.
 - Old TensorBoard event files keep old tags after plugin upgrades. Create a new run for a clean dashboard.
 - `train/progress` appears only when total iterations are available through the runtime.
-- The plugin currently targets LichtFeld plugin API `>=1,<2`.
 
 ## Development Checks
 
