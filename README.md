@@ -26,19 +26,33 @@ TensorBoard dashboard:
 
 ## Installation
 
-Clone or copy this repository into LichtFeld's plugin directory:
+Clone this repository into LichtFeld's plugin directory with the plugin directory name `tensorboard_export`:
 
-```text
-~/.lichtfeld/plugins/tensorboard_export
+```powershell
+git clone https://github.com/Dok11/lichtfeld-tensorboard-export.git "$env:USERPROFILE\.lichtfeld\plugins\tensorboard_export"
 ```
 
-On Windows this is typically:
+On Linux/macOS:
 
-```text
-%USERPROFILE%\.lichtfeld\plugins\tensorboard_export
+```bash
+git clone https://github.com/Dok11/lichtfeld-tensorboard-export.git ~/.lichtfeld/plugins/tensorboard_export
 ```
 
 The plugin directory must contain `pyproject.toml` and `__init__.py` at its root.
+
+To update an existing installation:
+
+```powershell
+cd "$env:USERPROFILE\.lichtfeld\plugins\tensorboard_export"
+git pull
+```
+
+On Linux/macOS:
+
+```bash
+cd ~/.lichtfeld/plugins/tensorboard_export
+git pull
+```
 
 Then validate it from the directory that contains `LichtFeld-Studio.exe`:
 
