@@ -14,6 +14,16 @@ It exists because LichtFeld Studio's built-in loss plot is intentionally short-l
 - Exposes plugin UI controls for status, run rotation, folder opening, TensorBoard command copying, and TensorBoard URL opening.
 - Avoids known empty metrics: `train/progress` is written only when max iterations are known, and PSNR is not exported because this LichtFeld runtime commonly reports it as an empty zero signal.
 
+## Screenshots
+
+LichtFeld export panel:
+
+![LichtFeld TensorBoard Export panel](docs/images/lichtfeld-export-panel.png)
+
+TensorBoard dashboard:
+
+![TensorBoard dashboard with exported LichtFeld training metrics](docs/images/tensorboard-dashboard.png)
+
 ## Installation
 
 Clone or copy this repository into LichtFeld's plugin directory:

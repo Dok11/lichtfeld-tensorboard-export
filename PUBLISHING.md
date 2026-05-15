@@ -14,6 +14,8 @@ LICENSE
 .gitignore
 .gitattributes
 PUBLISHING.md
+docs/images/lichtfeld-export-panel.png
+docs/images/tensorboard-dashboard.png
 ```
 
 ## Exclude
@@ -32,7 +34,7 @@ pyrightconfig.json
 
 ```powershell
 git init
-git add __init__.py pyproject.toml uv.lock README.md CHANGELOG.md LICENSE .gitignore .gitattributes PUBLISHING.md
+git add __init__.py pyproject.toml uv.lock README.md CHANGELOG.md LICENSE .gitignore .gitattributes PUBLISHING.md docs/images/lichtfeld-export-panel.png docs/images/tensorboard-dashboard.png
 git commit -m "Initial TensorBoard export plugin"
 git branch -M main
 git remote add origin https://github.com/<owner>/<repo>.git
