@@ -29,6 +29,10 @@ TensorBoard dashboard:
 
 ![TensorBoard dashboard with exported LichtFeld training metrics](docs/images/tensorboard-dashboard.png)
 
+## Articles
+
+- [How to use Loss curves in LichtFeld Studio](docs/articles/using-loss-curves.en.md)
+
 ## Requirements
 
 - LichtFeld Studio `>=0.4.2`
@@ -37,7 +41,23 @@ TensorBoard dashboard:
 - `tensorboardX` is used by the plugin for event file writing.
 - TensorBoard itself must be installed and started separately.
 
-## Installation
+## Agent Installation
+
+If you use a local coding agent such as Codex, Claude Code, or another assistant with filesystem access, you can ask it to install the plugin for you:
+
+```text
+Install the LichtFeld Studio plugin from https://github.com/Dok11/lichtfeld-tensorboard-export.
+
+Clone it into the LichtFeld plugin directory with the exact folder name tensorboard_export:
+- Windows: %USERPROFILE%\.lichtfeld\plugins\tensorboard_export
+- Linux/macOS: ~/.lichtfeld/plugins/tensorboard_export
+
+After installation, run the LichtFeld plugin check if LichtFeld-Studio.exe is available. Do not rename the plugin folder. Tell me the installed path and whether validation passed.
+```
+
+The agent should clone the repository into LichtFeld's plugin directory as `tensorboard_export`, so the installed plugin root contains `pyproject.toml` and `__init__.py`.
+
+## Manual Installation
 
 Clone this repository into LichtFeld's plugin directory with the plugin directory name `tensorboard_export`:
 
@@ -75,6 +95,10 @@ $env:PYTHONUTF8='1'
 ```
 
 `PYTHONUTF8=1` works around a Windows plugin validator issue where dependency files inside `.venv` can be read with the legacy console code page.
+
+## Enable the Plugin
+
+After the plugin files are installed, open LichtFeld Studio, go to `Tools > Plugin Marketplace`, find `tensorboard_export`, and click `Install`.
 
 ## Usage
 

@@ -39,6 +39,15 @@ LICENSE
 .gitignore
 .gitattributes
 MAINTAINING.md
+docs/articles/using-loss-curves.en.md
+docs/articles/images/loss-50k-splats-300k-iters.png
+docs/articles/images/loss-50k-vs-100k-splats.png
+docs/articles/images/speed-50k-vs-100k-splats.png
+docs/articles/images/loss-50k-100k-200k-splats.png
+docs/articles/images/speed-50k-100k-200k-splats.png
+docs/articles/images/loss-50k-100k-200k-300k-splats.png
+docs/articles/images/loss-50k-100k-200k-300k-600k-splats.png
+docs/articles/images/loss-600k-splats-log-view.png
 docs/images/lichtfeld-export-panel.png
 docs/images/tensorboard-dashboard.png
 ```
