@@ -1,0 +1,15 @@
+.venv/
+.vscode/
+__pycache__/
+*.py[cod]
+settings.json
+pyrightconfig.json
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+*.log
+*.tmp
+LichtFeldTensorBoardRuns/

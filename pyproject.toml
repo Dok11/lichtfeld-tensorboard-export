@@ -1,0 +1,34 @@
+[project]
+name = "tensorboard_export"
+version = "0.1.0"
+description = "Export full LichtFeld training metrics to TensorBoard event files and CSV"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "LichtFeld TensorBoard Export contributors" },
+]
+keywords = [
+    "lichtfeld",
+    "tensorboard",
+    "training",
+    "metrics",
+    "gaussian-splatting",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "tensorboardX>=2.6.2.2",
+]
+
+[tool.lichtfeld]
+hot_reload = true
+plugin_api = ">=1,<2"
+lichtfeld_version = ">=0.4.2"
+required_features = []
